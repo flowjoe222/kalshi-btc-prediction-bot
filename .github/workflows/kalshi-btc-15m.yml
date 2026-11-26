@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   predict:
@@ -44,7 +44,7 @@ jobs:
       - name: Run KXBTC15M fair-value prediction
         if: steps.maint.outputs.skip != 'true'
         run: |
-          python3 scripts/predict_btc_15m.py | tee prediction.txt
+          python3 scripts/predict_btc_15m.py --ledger docs/data/ledger.json | tee prediction.txt
           {
             echo "## Kalshi BTC 15-Minute Prediction"
             echo ""
@@ -52,3 +52,17 @@ jobs:
             cat prediction.txt
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit updated prediction ledger
+        if: steps.maint.outputs.skip != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/ledger.json
+          if git diff --cached --quiet; then
+            echo "Ledger unchanged"
+          else
+            git commit -m "Update KXBTC15M prediction ledger [skip ci]"
+            git pull --rebase origin main
+            git push
+          fi

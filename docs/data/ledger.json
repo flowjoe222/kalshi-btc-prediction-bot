@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-26T16:40:40.022905+00:00",
+  "latest_run": {
+    "run_at": "2026-11-26T16:40:39.654819+00:00",
+    "status": "ok",
+    "ticker": "KXBTC15M-26NOV261145-45",
+    "title": "BTC price up in next 15 mins?",
+    "market_status": "active",
+    "open_time": "2026-11-26T16:30:00+00:00",
+    "close_time": "2026-11-26T16:45:00+00:00",
+    "window_label": "10:30 CST -> 10:45 CST",
+    "strike": 60395.55,
+    "spot": 60455.745,
+    "yes_bid_cents": 65,
+    "yes_ask_cents": 66,
+    "no_ask_cents": 35,
+    "p_up": 0.742039,
+    "p_down": 0.257961,
+    "yes_net_edge_cents": -2,
+    "no_net_edge_cents": -8,
+    "yes_reason": "confidence 0.484 < 0.55",
+    "no_reason": "confidence 0.000 < 0.55",
+    "prediction": "HOLD",
+    "prediction_detail": "HOLD  (model leans UP at 74.20%, but no side clears the 8c net-edge gate)",
+    "entry_cleared": false,
+    "message": null
+  },
+  "open_trades": [],
+  "settled_trades": []
+}

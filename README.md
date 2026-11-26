@@ -12,3 +12,9 @@ Start with WINDOWS.md. Releases include an executable, launcher, configuration t
 The published 184-trade snapshot (149 wins / 35 losses, +$66.51 net after recorded fees) is historical demo data from the original deployment, not Windows performance or live-money returns.
 
 Independent educational project by CT Web Solutions, not affiliated with Kalshi. Source remains subject to its authors' rights; no third-party license grant is implied.
+
+## Paper dashboard
+
+`docs/` is a static dark-mode Prediction dashboard for the 15-minute `KXBTC15M` paper ledger. The scheduled GitHub Action runs `scripts/predict_btc_15m.py --ledger docs/data/ledger.json`, settles any completed paper trades, and records a live snapshot. The ledger starts empty and only opens a 1-contract paper trade when the conservative fair-value model clears the 8¢ net-edge gate (cost ≤ 75¢, confidence ≥ 0.55).
+
+After GitHub Pages is enabled from the `main` branch `/docs` folder, the dashboard is at <https://flowjoe222.github.io/kalshi-btc-prediction-bot/>. Use the repo [Actions](https://github.com/flowjoe222/kalshi-btc-prediction-bot/actions) tab to inspect each 15-minute run.
