@@ -31,11 +31,24 @@ jobs:
               with open(output, "a", encoding="utf-8") as fh:
                   fh.write(f"skip={'true' if skip else 'false'}\n")
           if skip:
-              print(f"Skipping: Kalshi maintenance 03:00-05:00 America/New_York ({now.isoformat()})")
+              msg = f"Skipped: Kalshi Thursday maintenance window (2:00–4:00 AM CST / 3:00–5:00 AM ET, {now.isoformat()})"
+              print(msg)
+              summary = os.environ.get("GITHUB_STEP_SUMMARY")
+              if summary:
+                  with open(summary, "a", encoding="utf-8") as fh:
+                      fh.write(f"## Kalshi BTC 15-Minute Prediction\n\n{msg}\n")
           else:
               print(f"Outside maintenance window ({now.isoformat()})")
           PY
 
       - name: Run KXBTC15M fair-value prediction
         if: steps.maint.outputs.skip != 'true'
-        run: python3 scripts/predict_btc_15m.py
+        run: |
+          python3 scripts/predict_btc_15m.py | tee prediction.txt
+          {
+            echo "## Kalshi BTC 15-Minute Prediction"
+            echo ""
+            echo '```text'
+            cat prediction.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
