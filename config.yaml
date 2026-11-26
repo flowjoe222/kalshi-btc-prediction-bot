@@ -1,0 +1,112 @@
+signal:
+  imbalance_threshold: 0.65
+  window_seconds: 10
+  confirmation_window_seconds: 30
+  min_volume_usdc: 500.0
+  confidence_min: 0.60
+  cooldown_seconds: 45
+  large_trade_multiplier: 1.5
+  large_trade_threshold_usdc: 200.0
+
+polymarket:
+  clob_ws_url: "wss://ws-subscriptions-clob.polymarket.com/ws/market"
+  clob_rest_url: "https://clob.polymarket.com"
+  gamma_api_url: "https://gamma-api.polymarket.com"
+  market_refresh_interval: 300
+  ws_ping_interval: 30
+  ws_ping_timeout: 10
+  ws_max_reconnect_delay: 60
+
+binance:
+  ws_url: "wss://stream.binance.com:9443/ws/btcusdt@aggTrade"
+
+markets:
+  search_keywords:
+    - "bitcoin"
+    - "BTC"
+    - "btc"
+    - "ethereum"
+    - "ETH"
+    - "solana"
+    - "SOL"
+    - "weather"
+    - "temperature"
+    - "climate"
+  preferred_expiry_minutes: 15
+  max_strike_distance_pct: 0.03
+
+adaptive:
+  min_samples_to_learn: 20
+  rolling_window_size: 50
+  optimization_interval: 10
+  learning_rate: 0.10
+  target_win_rate: 0.55
+  emergency_tighten_threshold: 0.38
+  bounds:
+    imbalance_threshold: [0.55, 0.85]
+    window_seconds: [5.0, 60.0]
+    min_volume_usdc: [100.0, 5000.0]
+    confidence_min: [0.50, 0.85]
+    cooldown_seconds: [15.0, 120.0]
+  lessons_log_path: "logs/lessons.json"
+
+resolution:
+  check_after_seconds: 60
+  min_move_bps: 5.0
+
+logging:
+  level: "info"
+  trade_log_csv: "logs/trades.csv"
+  signal_log_jsonl: "logs/signals.jsonl"
+  performance_log: "logs/performance.json"
+  max_entries_per_file: 10000
+
+dashboard:
+  # Bind to loopback only by default; expose externally via reverse proxy
+  # with auth (see DASHBOARD_TOKEN env var) or override host explicitly.
+  host: "127.0.0.1"
+  port: 5150
+  poll_interval_ms: 1000
+  max_history_rows: 100
+
+simulation:
+  test_mode: false                 # Actual Kalshi demo exchange; production rejected
+  tick_interval_seconds: 1.0
+  starting_price: 83000.0          # Approximate current BTC price
+  annual_volatility: 0.80
+  annual_drift: 0.30
+  signal_quality: 0.65
+  base_volume_per_second: 250.0
+
+kalshi:
+  max_position_cents: 125
+  max_daily_loss_cents: 300
+  max_concurrent_positions: 3
+  cooldown_seconds: 5              # 5s cooldown — humans can't react this fast; bot can
+  confidence_threshold: 0.55       # Raised from 0.30: kill the low-conviction `direct-` bets that caused the -100% expiry tail
+  max_total_exposure_cents: 300
+  starting_balance_cents: 9887
+
+  # ---- Fair-value (FV) digital-pricing bot ----
+  # Prices each near-expiry crypto binary with a Black-Scholes digital fair value
+  # and only takes the quote when fee+slippage-adjusted edge clears a hard buffer.
+  # Actual demo uses this one strategy through the durable execution coordinator.
+  # Legacy heuristic execution loops are not started. Conservative v2 entries use one contract and a 75-cent fee/slippage-inclusive ceiling,
+  # one attempt per 15-minute window, held to authoritative exchange settlement.
+  fv_enabled: true
+  fv_min_edge_cents: 8             # net edge (after fee+slippage) required to enter
+  fv_slippage_cents: 2             # assumed taker slippage on thin books
+  fv_size_pct: 0.08                # 8% of bankroll per FV trade (small — real edge is tiny)
+  fv_max_contracts: 1
+  fv_hold_to_settlement: true      # hold deep ITM/OTM to fee-free settlement instead of scalping out
+  fv_daily_stop_cents: 300         # halt FV entries after -$3 realized on the day
+  fv_vol_floor_per_sec: 0.00005    # floor on realized vol (flat tape != certainty)
+  fv_max_ttc_secs: 2400            # skip contracts >40min from expiry
+
+arbitrage:
+  enabled: false
+  min_gap: 0.015                   # Catch smaller arb gaps humans would miss
+  scan_interval_secs: 10           # Scan 3× more often — bot edge is recurrence speed
+  auto_execute: false               # Enable auto-execution in demo mode
+  max_position_size_usd: 2.0       # Conservative for $16 bankroll
+  opportunities_log_csv: "logs/arbitrage_opportunities.csv"

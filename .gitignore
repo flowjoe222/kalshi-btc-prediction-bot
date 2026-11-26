@@ -1,0 +1,49 @@
+# --- Build artifacts ---
+/target/
+/target 2/
+target/
+dist/
+out/
+build/
+.turbo/
+tsconfig.tsbuildinfo
+
+# --- Node / Next.js (dashboard) ---
+node_modules/
+.next/
+.vercel/
+
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+
+# --- Secrets / credentials ---
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+kalshi_*.pem
+kalshi_*.key
+
+# --- Logs & runtime data ---
+logs/
+*.log
+/data/
+
+# --- Claude Code worktrees & locks ---
+.claude/worktrees/
+.claude/scheduled_tasks.lock
+
+# --- OS / junk ---
+.DS_Store
+/-
+
+# Local demo deployment credentials and executables
+.secrets/
+.bin/
+
+*.exe
+*.zip

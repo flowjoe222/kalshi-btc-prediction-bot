@@ -1,0 +1,41 @@
+name: Kalshi BTC 15-minute prediction
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Skip during Kalshi Thursday maintenance
+        id: maint
+        run: |
+          python3 - <<'PY'
+          import os
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+
+          now = datetime.now(ZoneInfo("America/New_York"))
+          # Thursday 03:00-05:00 ET == 2:00-4:00 AM America/Chicago.
+          skip = now.weekday() == 3 and 3 <= now.hour < 5
+          output = os.environ.get("GITHUB_OUTPUT")
+          if output:
+              with open(output, "a", encoding="utf-8") as fh:
+                  fh.write(f"skip={'true' if skip else 'false'}\n")
+          if skip:
+              print(f"Skipping: Kalshi maintenance 03:00-05:00 America/New_York ({now.isoformat()})")
+          else:
+              print(f"Outside maintenance window ({now.isoformat()})")
+          PY
+
+      - name: Run KXBTC15M fair-value prediction
+        if: steps.maint.outputs.skip != 'true'
+        run: python3 scripts/predict_btc_15m.py

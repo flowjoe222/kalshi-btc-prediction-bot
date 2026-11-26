@@ -1,0 +1,1498 @@
+{
+  "as_of_utc": "2026-09-23T03:36:09.237721+00:00",
+  "environment": "demo",
+  "all": {
+    "trades": 184,
+    "wins": 149,
+    "losses": 35,
+    "net_usd": 66.5144
+  },
+  "revised_strategy": {
+    "trades": 92,
+    "wins": 82,
+    "losses": 10,
+    "net_usd": 43.7128
+  },
+  "latest_30": {
+    "trades": 30,
+    "wins": 26,
+    "losses": 4,
+    "net_usd": 14.4938
+  },
+  "methodology": "Settled fv-hold strategy trades only; demo-test and open positions excluded. Net includes recorded fees. Revised cohort selected by entry intent time.",
+  "cohort_start_utc": "2026-09-16T21:38:43+00:00",
+  "settlements": [
+    {
+      "ticker": "KXSOL15M-26SEP131245-45",
+      "ts": 1789317910,
+      "count": 100,
+      "cost": 636500,
+      "revenue": 1000000,
+      "pnl": 363500
+    },
+    {
+      "ticker": "KXETH15M-26SEP131415-15",
+      "ts": 1789323310,
+      "count": 100,
+      "cost": 753500,
+      "revenue": 1000000,
+      "pnl": 246500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP131430-30",
+      "ts": 1789324210,
+      "count": 100,
+      "cost": 304500,
+      "revenue": 1000000,
+      "pnl": 695500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP131830-30",
+      "ts": 1789338610,
+      "count": 100,
+      "cost": 743800,
+      "revenue": 1000000,
+      "pnl": 256200
+    },
+    {
+      "ticker": "KXBTC15M-26SEP131945-45",
+      "ts": 1789343110,
+      "count": 100,
+      "cost": 705000,
+      "revenue": 1000000,
+      "pnl": 295000
+    },
+    {
+      "ticker": "KXXRP15M-26SEP132045-45",
+      "ts": 1789346711,
+      "count": 100,
+      "cost": 695300,
+      "revenue": 1000000,
+      "pnl": 304700
+    },
+    {
+      "ticker": "KXBTC15M-26SEP132100-00",
+      "ts": 1789347626,
+      "count": 100,
+      "cost": 577300,
+      "revenue": 1000000,
+      "pnl": 422700
+    },
+    {
+      "ticker": "KXBTC15M-26SEP132130-30",
+      "ts": 1789349411,
+      "count": 100,
+      "cost": 743800,
+      "revenue": 0,
+      "pnl": -743800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP132230-30",
+      "ts": 1789353012,
+      "count": 100,
+      "cost": 656200,
+      "revenue": 1000000,
+      "pnl": 343800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP132245-45",
+      "ts": 1789353911,
+      "count": 100,
+      "cost": 314700,
+      "revenue": 1000000,
+      "pnl": 685300
+    },
+    {
+      "ticker": "KXETH15M-26SEP132300-00",
+      "ts": 1789354817,
+      "count": 100,
+      "cost": 772800,
+      "revenue": 1000000,
+      "pnl": 227200
+    },
+    {
+      "ticker": "KXBTC15M-26SEP140000-00",
+      "ts": 1789358413,
+      "count": 100,
+      "cost": 670000,
+      "revenue": 0,
+      "pnl": -670000
+    },
+    {
+      "ticker": "KXETH15M-26SEP140030-30",
+      "ts": 1789360210,
+      "count": 100,
+      "cost": 675800,
+      "revenue": 1000000,
+      "pnl": 324200
+    },
+    {
+      "ticker": "KXBTC15M-26SEP140115-15",
+      "ts": 1789362910,
+      "count": 100,
+      "cost": 724500,
+      "revenue": 1000000,
+      "pnl": 275500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP140130-30",
+      "ts": 1789363811,
+      "count": 100,
+      "cost": 685500,
+      "revenue": 1000000,
+      "pnl": 314500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP140200-00",
+      "ts": 1789365610,
+      "count": 100,
+      "cost": 616800,
+      "revenue": 1000000,
+      "pnl": 383200
+    },
+    {
+      "ticker": "KXBTC15M-26SEP140215-15",
+      "ts": 1789366511,
+      "count": 100,
+      "cost": 782400,
+      "revenue": 1000000,
+      "pnl": 217600
+    },
+    {
+      "ticker": "KXBTC15M-26SEP140300-00",
+      "ts": 1789369210,
+      "count": 100,
+      "cost": 724500,
+      "revenue": 1000000,
+      "pnl": 275500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP140315-15",
+      "ts": 1789370110,
+      "count": 100,
+      "cost": 527500,
+      "revenue": 1000000,
+      "pnl": 472500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP140330-30",
+      "ts": 1789371010,
+      "count": 100,
+      "cost": 457300,
+      "revenue": 1000000,
+      "pnl": 542700
+    },
+    {
+      "ticker": "KXBTC15M-26SEP140345-45",
+      "ts": 1789371910,
+      "count": 100,
+      "cost": 467400,
+      "revenue": 1000000,
+      "pnl": 532600
+    },
+    {
+      "ticker": "KXBTC15M-26SEP140400-00",
+      "ts": 1789372810,
+      "count": 100,
+      "cost": 366000,
+      "revenue": 1000000,
+      "pnl": 634000
+    },
+    {
+      "ticker": "KXBTC15M-26SEP140445-45",
+      "ts": 1789375510,
+      "count": 100,
+      "cost": 705000,
+      "revenue": 1000000,
+      "pnl": 295000
+    },
+    {
+      "ticker": "KXETH15M-26SEP140500-00",
+      "ts": 1789376410,
+      "count": 100,
+      "cost": 636500,
+      "revenue": 1000000,
+      "pnl": 363500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP140515-15",
+      "ts": 1789377310,
+      "count": 100,
+      "cost": 724500,
+      "revenue": 0,
+      "pnl": -724500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP140545-45",
+      "ts": 1789379110,
+      "count": 100,
+      "cost": 763200,
+      "revenue": 1000000,
+      "pnl": 236800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP140645-45",
+      "ts": 1789382710,
+      "count": 100,
+      "cost": 416800,
+      "revenue": 1000000,
+      "pnl": 583200
+    },
+    {
+      "ticker": "KXBTC15M-26SEP140745-45",
+      "ts": 1789386310,
+      "count": 100,
+      "cost": 577300,
+      "revenue": 1000000,
+      "pnl": 422700
+    },
+    {
+      "ticker": "KXBTC15M-26SEP140830-30",
+      "ts": 1789389009,
+      "count": 100,
+      "cost": 782400,
+      "revenue": 1000000,
+      "pnl": 217600
+    },
+    {
+      "ticker": "KXXRP15M-26SEP140900-00",
+      "ts": 1789390811,
+      "count": 100,
+      "cost": 597100,
+      "revenue": 1000000,
+      "pnl": 402900
+    },
+    {
+      "ticker": "KXBTC15M-26SEP140930-30",
+      "ts": 1789392610,
+      "count": 100,
+      "cost": 714700,
+      "revenue": 1000000,
+      "pnl": 285300
+    },
+    {
+      "ticker": "KXBTC15M-26SEP141000-00",
+      "ts": 1789394411,
+      "count": 100,
+      "cost": 868500,
+      "revenue": 1000000,
+      "pnl": 131500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP141015-15",
+      "ts": 1789395310,
+      "count": 100,
+      "cost": 138000,
+      "revenue": 0,
+      "pnl": -138000
+    },
+    {
+      "ticker": "KXBTC15M-26SEP141030-30",
+      "ts": 1789396210,
+      "count": 100,
+      "cost": 705000,
+      "revenue": 0,
+      "pnl": -705000
+    },
+    {
+      "ticker": "KXBTC15M-26SEP141145-45",
+      "ts": 1789400710,
+      "count": 100,
+      "cost": 763200,
+      "revenue": 1000000,
+      "pnl": 236800
+    },
+    {
+      "ticker": "KXETH15M-26SEP141200-00",
+      "ts": 1789401611,
+      "count": 100,
+      "cost": 675800,
+      "revenue": 1000000,
+      "pnl": 324200
+    },
+    {
+      "ticker": "KXBTC15M-26SEP141230-30",
+      "ts": 1789403410,
+      "count": 100,
+      "cost": 743800,
+      "revenue": 1000000,
+      "pnl": 256200
+    },
+    {
+      "ticker": "KXSOL15M-26SEP141245-45",
+      "ts": 1789404311,
+      "count": 100,
+      "cost": 906300,
+      "revenue": 1000000,
+      "pnl": 93700
+    },
+    {
+      "ticker": "KXBTC15M-26SEP141300-00",
+      "ts": 1789405210,
+      "count": 100,
+      "cost": 782400,
+      "revenue": 1000000,
+      "pnl": 217600
+    },
+    {
+      "ticker": "KXBTC15M-26SEP141345-45",
+      "ts": 1789407918,
+      "count": 100,
+      "cost": 763200,
+      "revenue": 1000000,
+      "pnl": 236800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP141800-00",
+      "ts": 1789423214,
+      "count": 100,
+      "cost": 110000,
+      "revenue": 0,
+      "pnl": -110000
+    },
+    {
+      "ticker": "KXBTC15M-26SEP141845-45",
+      "ts": 1789425910,
+      "count": 200,
+      "cost": 934700,
+      "revenue": 2000000,
+      "pnl": 1065300
+    },
+    {
+      "ticker": "KXETH15M-26SEP141900-00",
+      "ts": 1789426810,
+      "count": 100,
+      "cost": 567400,
+      "revenue": 1000000,
+      "pnl": 432600
+    },
+    {
+      "ticker": "KXBTC15M-26SEP141915-15",
+      "ts": 1789427710,
+      "count": 200,
+      "cost": 149200,
+      "revenue": 0,
+      "pnl": -149200
+    },
+    {
+      "ticker": "KXBTC15M-26SEP142000-00",
+      "ts": 1789430415,
+      "count": 200,
+      "cost": 233800,
+      "revenue": 0,
+      "pnl": -233800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP142015-15",
+      "ts": 1789431310,
+      "count": 200,
+      "cost": 1154500,
+      "revenue": 0,
+      "pnl": -1154500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP142045-45",
+      "ts": 1789433111,
+      "count": 100,
+      "cost": 753500,
+      "revenue": 0,
+      "pnl": -753500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP142115-15",
+      "ts": 1789434911,
+      "count": 200,
+      "cost": 233800,
+      "revenue": 0,
+      "pnl": -233800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP142130-30",
+      "ts": 1789435811,
+      "count": 200,
+      "cost": 64100,
+      "revenue": 0,
+      "pnl": -64100
+    },
+    {
+      "ticker": "KXBTC15M-26SEP142300-00",
+      "ts": 1789441210,
+      "count": 200,
+      "cost": 233800,
+      "revenue": 2000000,
+      "pnl": 1766200
+    },
+    {
+      "ticker": "KXBTC15M-26SEP142330-30",
+      "ts": 1789443011,
+      "count": 100,
+      "cost": 753500,
+      "revenue": 1000000,
+      "pnl": 246500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP142345-45",
+      "ts": 1789443910,
+      "count": 200,
+      "cost": 1154500,
+      "revenue": 2000000,
+      "pnl": 845500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150000-00",
+      "ts": 1789444810,
+      "count": 200,
+      "cost": 275900,
+      "revenue": 0,
+      "pnl": -275900
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150015-15",
+      "ts": 1789445710,
+      "count": 200,
+      "cost": 233800,
+      "revenue": 2000000,
+      "pnl": 1766200
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150030-30",
+      "ts": 1789446610,
+      "count": 200,
+      "cost": 974900,
+      "revenue": 2000000,
+      "pnl": 1025100
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150100-00",
+      "ts": 1789448410,
+      "count": 200,
+      "cost": 170400,
+      "revenue": 0,
+      "pnl": -170400
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150115-15",
+      "ts": 1789449310,
+      "count": 200,
+      "cost": 275900,
+      "revenue": 2000000,
+      "pnl": 1724100
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150130-30",
+      "ts": 1789450210,
+      "count": 100,
+      "cost": 646400,
+      "revenue": 1000000,
+      "pnl": 353600
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150145-45",
+      "ts": 1789451128,
+      "count": 200,
+      "cost": 1154500,
+      "revenue": 0,
+      "pnl": -1154500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150215-15",
+      "ts": 1789452911,
+      "count": 100,
+      "cost": 772800,
+      "revenue": 0,
+      "pnl": -772800
+    },
+    {
+      "ticker": "KXXRP15M-26SEP150245-45",
+      "ts": 1789454711,
+      "count": 100,
+      "cost": 887400,
+      "revenue": 1000000,
+      "pnl": 112600
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150315-15",
+      "ts": 1789456510,
+      "count": 200,
+      "cost": 995000,
+      "revenue": 2000000,
+      "pnl": 1005000
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150330-30",
+      "ts": 1789457410,
+      "count": 100,
+      "cost": 734200,
+      "revenue": 1000000,
+      "pnl": 265800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150400-00",
+      "ts": 1789459212,
+      "count": 200,
+      "cost": 711500,
+      "revenue": 2000000,
+      "pnl": 1288500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150415-15",
+      "ts": 1789460110,
+      "count": 200,
+      "cost": 233800,
+      "revenue": 0,
+      "pnl": -233800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150430-30",
+      "ts": 1789461010,
+      "count": 200,
+      "cost": 359800,
+      "revenue": 2000000,
+      "pnl": 1640200
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150500-00",
+      "ts": 1789462811,
+      "count": 200,
+      "cost": 233800,
+      "revenue": 0,
+      "pnl": -233800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150515-15",
+      "ts": 1789463710,
+      "count": 200,
+      "cost": 233800,
+      "revenue": 0,
+      "pnl": -233800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150545-45",
+      "ts": 1789465509,
+      "count": 100,
+      "cost": 30000,
+      "revenue": 0,
+      "pnl": -30000
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150615-15",
+      "ts": 1789467309,
+      "count": 200,
+      "cost": 464100,
+      "revenue": 2000000,
+      "pnl": 1535900
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150645-45",
+      "ts": 1789469110,
+      "count": 100,
+      "cost": 666000,
+      "revenue": 1000000,
+      "pnl": 334000
+    },
+    {
+      "ticker": "KXDOGE15M-26SEP150745-45",
+      "ts": 1789472710,
+      "count": 100,
+      "cost": 772800,
+      "revenue": 1000000,
+      "pnl": 227200
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150800-00",
+      "ts": 1789473613,
+      "count": 200,
+      "cost": 894400,
+      "revenue": 2000000,
+      "pnl": 1105600
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150830-30",
+      "ts": 1789475410,
+      "count": 200,
+      "cost": 1154500,
+      "revenue": 0,
+      "pnl": -1154500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150900-00",
+      "ts": 1789477213,
+      "count": 200,
+      "cost": 1055000,
+      "revenue": 2000000,
+      "pnl": 945000
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150915-15",
+      "ts": 1789478111,
+      "count": 200,
+      "cost": 1194200,
+      "revenue": 2000000,
+      "pnl": 805800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP150945-45",
+      "ts": 1789479910,
+      "count": 100,
+      "cost": 763200,
+      "revenue": 1000000,
+      "pnl": 236800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP151015-15",
+      "ts": 1789481710,
+      "count": 100,
+      "cost": 734200,
+      "revenue": 1000000,
+      "pnl": 265800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP151045-45",
+      "ts": 1789483510,
+      "count": 100,
+      "cost": 760000,
+      "revenue": 1000000,
+      "pnl": 240000
+    },
+    {
+      "ticker": "KXBTC15M-26SEP151100-00",
+      "ts": 1789484411,
+      "count": 100,
+      "cost": 839900,
+      "revenue": 0,
+      "pnl": -839900
+    },
+    {
+      "ticker": "KXBTC15M-26SEP151130-30",
+      "ts": 1789486210,
+      "count": 200,
+      "cost": 1094900,
+      "revenue": 2000000,
+      "pnl": 905100
+    },
+    {
+      "ticker": "KXBTC15M-26SEP151230-30",
+      "ts": 1789489811,
+      "count": 100,
+      "cost": 792100,
+      "revenue": 1000000,
+      "pnl": 207900
+    },
+    {
+      "ticker": "KXBTC15M-26SEP151245-45",
+      "ts": 1789490710,
+      "count": 100,
+      "cost": 159000,
+      "revenue": 0,
+      "pnl": -159000
+    },
+    {
+      "ticker": "KXBTC15M-26SEP151315-15",
+      "ts": 1789492510,
+      "count": 100,
+      "cost": 675800,
+      "revenue": 1000000,
+      "pnl": 324200
+    },
+    {
+      "ticker": "KXBTC15M-26SEP151330-30",
+      "ts": 1789493411,
+      "count": 100,
+      "cost": 626700,
+      "revenue": 1000000,
+      "pnl": 373300
+    },
+    {
+      "ticker": "KXSOL15M-26SEP151415-15",
+      "ts": 1789496112,
+      "count": 100,
+      "cost": 646400,
+      "revenue": 1000000,
+      "pnl": 353600
+    },
+    {
+      "ticker": "KXSOL15M-26SEP161600-00",
+      "ts": 1789588816,
+      "count": 100,
+      "cost": 887400,
+      "revenue": 1000000,
+      "pnl": 112600
+    },
+    {
+      "ticker": "KXBTC15M-26SEP161615-15",
+      "ts": 1789589714,
+      "count": 200,
+      "cost": 317900,
+      "revenue": 0,
+      "pnl": -317900
+    },
+    {
+      "ticker": "KXBTC15M-26SEP161630-30",
+      "ts": 1789590611,
+      "count": 100,
+      "cost": 860000,
+      "revenue": 0,
+      "pnl": -860000
+    },
+    {
+      "ticker": "KXBTC15M-26SEP161645-45",
+      "ts": 1789591510,
+      "count": 100,
+      "cost": 780000,
+      "revenue": 1000000,
+      "pnl": 220000
+    },
+    {
+      "ticker": "KXXRP15M-26SEP161700-00",
+      "ts": 1789592414,
+      "count": 100,
+      "cost": 734200,
+      "revenue": 1000000,
+      "pnl": 265800
+    },
+    {
+      "ticker": "KXXRP15M-26SEP161745-45",
+      "ts": 1789595111,
+      "count": 200,
+      "cost": 1194200,
+      "revenue": 2000000,
+      "pnl": 805800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP161845-45",
+      "ts": 1789598710,
+      "count": 100,
+      "cost": 527500,
+      "revenue": 1000000,
+      "pnl": 472500
+    },
+    {
+      "ticker": "KXETH15M-26SEP161900-00",
+      "ts": 1789599612,
+      "count": 100,
+      "cost": 616800,
+      "revenue": 1000000,
+      "pnl": 383200
+    },
+    {
+      "ticker": "KXETH15M-26SEP162000-00",
+      "ts": 1789603213,
+      "count": 100,
+      "cost": 314700,
+      "revenue": 1000000,
+      "pnl": 685300
+    },
+    {
+      "ticker": "KXXRP15M-26SEP162030-30",
+      "ts": 1789605010,
+      "count": 100,
+      "cost": 695300,
+      "revenue": 1000000,
+      "pnl": 304700
+    },
+    {
+      "ticker": "KXXRP15M-26SEP162100-00",
+      "ts": 1789606811,
+      "count": 100,
+      "cost": 10700,
+      "revenue": 1000000,
+      "pnl": 989300
+    },
+    {
+      "ticker": "KXBTC15M-26SEP162230-30",
+      "ts": 1789612210,
+      "count": 100,
+      "cost": 437100,
+      "revenue": 1000000,
+      "pnl": 562900
+    },
+    {
+      "ticker": "KXETH15M-26SEP162330-30",
+      "ts": 1789615809,
+      "count": 100,
+      "cost": 467400,
+      "revenue": 1000000,
+      "pnl": 532600
+    },
+    {
+      "ticker": "KXXRP15M-26SEP162345-45",
+      "ts": 1789616710,
+      "count": 100,
+      "cost": 406700,
+      "revenue": 1000000,
+      "pnl": 593300
+    },
+    {
+      "ticker": "KXDOGE15M-26SEP170000-00",
+      "ts": 1789617611,
+      "count": 100,
+      "cost": 567400,
+      "revenue": 1000000,
+      "pnl": 432600
+    },
+    {
+      "ticker": "KXXRP15M-26SEP170015-15",
+      "ts": 1789618510,
+      "count": 100,
+      "cost": 10700,
+      "revenue": 1000000,
+      "pnl": 989300
+    },
+    {
+      "ticker": "KXBTC15M-26SEP170130-30",
+      "ts": 1789623010,
+      "count": 100,
+      "cost": 527500,
+      "revenue": 1000000,
+      "pnl": 472500
+    },
+    {
+      "ticker": "KXXRP15M-26SEP170230-30",
+      "ts": 1789626611,
+      "count": 100,
+      "cost": 626700,
+      "revenue": 1000000,
+      "pnl": 373300
+    },
+    {
+      "ticker": "KXSOL15M-26SEP170515-15",
+      "ts": 1789636510,
+      "count": 100,
+      "cost": 626700,
+      "revenue": 1000000,
+      "pnl": 373300
+    },
+    {
+      "ticker": "KXDOGE15M-26SEP170715-15",
+      "ts": 1789643711,
+      "count": 100,
+      "cost": 597100,
+      "revenue": 1000000,
+      "pnl": 402900
+    },
+    {
+      "ticker": "KXXRP15M-26SEP170730-30",
+      "ts": 1789644610,
+      "count": 100,
+      "cost": 685500,
+      "revenue": 1000000,
+      "pnl": 314500
+    },
+    {
+      "ticker": "KXETH15M-26SEP171215-15",
+      "ts": 1789661711,
+      "count": 100,
+      "cost": 457300,
+      "revenue": 1000000,
+      "pnl": 542700
+    },
+    {
+      "ticker": "KXBTC15M-26SEP171545-45",
+      "ts": 1789674310,
+      "count": 100,
+      "cost": 421600,
+      "revenue": 1000000,
+      "pnl": 578400
+    },
+    {
+      "ticker": "KXETH15M-26SEP172100-00",
+      "ts": 1789693222,
+      "count": 100,
+      "cost": 447200,
+      "revenue": 1000000,
+      "pnl": 552800
+    },
+    {
+      "ticker": "KXETH15M-26SEP172230-30",
+      "ts": 1789698609,
+      "count": 100,
+      "cost": 517500,
+      "revenue": 1000000,
+      "pnl": 482500
+    },
+    {
+      "ticker": "KXETH15M-26SEP180045-45",
+      "ts": 1789706710,
+      "count": 100,
+      "cost": 211200,
+      "revenue": 1000000,
+      "pnl": 788800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP180245-45",
+      "ts": 1789713910,
+      "count": 100,
+      "cost": 636500,
+      "revenue": 1000000,
+      "pnl": 363500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP180300-00",
+      "ts": 1789714810,
+      "count": 100,
+      "cost": 320000,
+      "revenue": 1000000,
+      "pnl": 680000
+    },
+    {
+      "ticker": "KXBTC15M-26SEP180415-15",
+      "ts": 1789719310,
+      "count": 100,
+      "cost": 416800,
+      "revenue": 0,
+      "pnl": -416800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP180445-45",
+      "ts": 1789721110,
+      "count": 100,
+      "cost": 386400,
+      "revenue": 1000000,
+      "pnl": 613600
+    },
+    {
+      "ticker": "KXBTC15M-26SEP180530-30",
+      "ts": 1789723810,
+      "count": 100,
+      "cost": 597100,
+      "revenue": 1000000,
+      "pnl": 402900
+    },
+    {
+      "ticker": "KXETH15M-26SEP180630-30",
+      "ts": 1789727410,
+      "count": 100,
+      "cost": 470000,
+      "revenue": 1000000,
+      "pnl": 530000
+    },
+    {
+      "ticker": "KXBTC15M-26SEP180745-45",
+      "ts": 1789731910,
+      "count": 100,
+      "cost": 467400,
+      "revenue": 1000000,
+      "pnl": 532600
+    },
+    {
+      "ticker": "KXBTC15M-26SEP180815-15",
+      "ts": 1789733710,
+      "count": 100,
+      "cost": 80000,
+      "revenue": 1000000,
+      "pnl": 920000
+    },
+    {
+      "ticker": "KXBTC15M-26SEP180915-15",
+      "ts": 1789737310,
+      "count": 100,
+      "cost": 557400,
+      "revenue": 1000000,
+      "pnl": 442600
+    },
+    {
+      "ticker": "KXXRP15M-26SEP181115-15",
+      "ts": 1789744511,
+      "count": 100,
+      "cost": 487500,
+      "revenue": 1000000,
+      "pnl": 512500
+    },
+    {
+      "ticker": "KXSOL15M-26SEP181130-30",
+      "ts": 1789745411,
+      "count": 100,
+      "cost": 607000,
+      "revenue": 1000000,
+      "pnl": 393000
+    },
+    {
+      "ticker": "KXBTC15M-26SEP181145-45",
+      "ts": 1789746311,
+      "count": 100,
+      "cost": 714700,
+      "revenue": 1000000,
+      "pnl": 285300
+    },
+    {
+      "ticker": "KXBTC15M-26SEP181445-45",
+      "ts": 1789757110,
+      "count": 100,
+      "cost": 487500,
+      "revenue": 1000000,
+      "pnl": 512500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP181500-00",
+      "ts": 1789758010,
+      "count": 100,
+      "cost": 587200,
+      "revenue": 1000000,
+      "pnl": 412800
+    },
+    {
+      "ticker": "KXXRP15M-26SEP181600-00",
+      "ts": 1789761610,
+      "count": 100,
+      "cost": 211200,
+      "revenue": 1000000,
+      "pnl": 788800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP181645-45",
+      "ts": 1789764310,
+      "count": 100,
+      "cost": 396500,
+      "revenue": 1000000,
+      "pnl": 603500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP181800-00",
+      "ts": 1789768810,
+      "count": 100,
+      "cost": 507500,
+      "revenue": 1000000,
+      "pnl": 492500
+    },
+    {
+      "ticker": "KXETH15M-26SEP181900-00",
+      "ts": 1789772412,
+      "count": 100,
+      "cost": 440000,
+      "revenue": 1000000,
+      "pnl": 560000
+    },
+    {
+      "ticker": "KXBTC15M-26SEP182015-15",
+      "ts": 1789776913,
+      "count": 100,
+      "cost": 724500,
+      "revenue": 1000000,
+      "pnl": 275500
+    },
+    {
+      "ticker": "KXSOL15M-26SEP182045-45",
+      "ts": 1789778716,
+      "count": 100,
+      "cost": 517500,
+      "revenue": 1000000,
+      "pnl": 482500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP182230-30",
+      "ts": 1789785011,
+      "count": 100,
+      "cost": 366000,
+      "revenue": 0,
+      "pnl": -366000
+    },
+    {
+      "ticker": "KXSOL15M-26SEP182345-45",
+      "ts": 1789789511,
+      "count": 100,
+      "cost": 211200,
+      "revenue": 1000000,
+      "pnl": 788800
+    },
+    {
+      "ticker": "KXDOGE15M-26SEP190015-15",
+      "ts": 1789791311,
+      "count": 100,
+      "cost": 211200,
+      "revenue": 1000000,
+      "pnl": 788800
+    },
+    {
+      "ticker": "KXETH15M-26SEP190030-30",
+      "ts": 1789792210,
+      "count": 100,
+      "cost": 416800,
+      "revenue": 1000000,
+      "pnl": 583200
+    },
+    {
+      "ticker": "KXXRP15M-26SEP190130-30",
+      "ts": 1789795810,
+      "count": 100,
+      "cost": 211200,
+      "revenue": 1000000,
+      "pnl": 788800
+    },
+    {
+      "ticker": "KXDOGE15M-26SEP190315-15",
+      "ts": 1789802110,
+      "count": 100,
+      "cost": 211200,
+      "revenue": 1000000,
+      "pnl": 788800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP190400-00",
+      "ts": 1789804811,
+      "count": 100,
+      "cost": 517500,
+      "revenue": 1000000,
+      "pnl": 482500
+    },
+    {
+      "ticker": "KXXRP15M-26SEP190515-15",
+      "ts": 1789809310,
+      "count": 100,
+      "cost": 211200,
+      "revenue": 1000000,
+      "pnl": 788800
+    },
+    {
+      "ticker": "KXDOGE15M-26SEP190530-30",
+      "ts": 1789810210,
+      "count": 100,
+      "cost": 211200,
+      "revenue": 1000000,
+      "pnl": 788800
+    },
+    {
+      "ticker": "KXSOL15M-26SEP190615-15",
+      "ts": 1789812911,
+      "count": 100,
+      "cost": 211200,
+      "revenue": 1000000,
+      "pnl": 788800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP190715-15",
+      "ts": 1789816511,
+      "count": 100,
+      "cost": 116900,
+      "revenue": 1000000,
+      "pnl": 883100
+    },
+    {
+      "ticker": "KXSOL15M-26SEP190815-15",
+      "ts": 1789820111,
+      "count": 100,
+      "cost": 345500,
+      "revenue": 0,
+      "pnl": -345500
+    },
+    {
+      "ticker": "KXXRP15M-26SEP190900-00",
+      "ts": 1789822810,
+      "count": 100,
+      "cost": 211200,
+      "revenue": 1000000,
+      "pnl": 788800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP191215-15",
+      "ts": 1789834511,
+      "count": 100,
+      "cost": 607000,
+      "revenue": 1000000,
+      "pnl": 393000
+    },
+    {
+      "ticker": "KXBTC15M-26SEP191415-15",
+      "ts": 1789841710,
+      "count": 100,
+      "cost": 560000,
+      "revenue": 1000000,
+      "pnl": 440000
+    },
+    {
+      "ticker": "KXETH15M-26SEP191445-45",
+      "ts": 1789843512,
+      "count": 100,
+      "cost": 567400,
+      "revenue": 0,
+      "pnl": -567400
+    },
+    {
+      "ticker": "KXSOL15M-26SEP191730-30",
+      "ts": 1789853411,
+      "count": 100,
+      "cost": 211200,
+      "revenue": 1000000,
+      "pnl": 788800
+    },
+    {
+      "ticker": "KXETH15M-26SEP191930-30",
+      "ts": 1789860611,
+      "count": 100,
+      "cost": 507500,
+      "revenue": 1000000,
+      "pnl": 492500
+    },
+    {
+      "ticker": "KXDOGE15M-26SEP192130-30",
+      "ts": 1789867814,
+      "count": 100,
+      "cost": 567400,
+      "revenue": 0,
+      "pnl": -567400
+    },
+    {
+      "ticker": "KXDOGE15M-26SEP192215-15",
+      "ts": 1789870511,
+      "count": 100,
+      "cost": 587200,
+      "revenue": 1000000,
+      "pnl": 412800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP192345-45",
+      "ts": 1789875910,
+      "count": 100,
+      "cost": 724500,
+      "revenue": 1000000,
+      "pnl": 275500
+    },
+    {
+      "ticker": "KXSOL15M-26SEP200045-45",
+      "ts": 1789879510,
+      "count": 100,
+      "cost": 211200,
+      "revenue": 0,
+      "pnl": -211200
+    },
+    {
+      "ticker": "KXXRP15M-26SEP200915-15",
+      "ts": 1789910111,
+      "count": 100,
+      "cost": 211200,
+      "revenue": 1000000,
+      "pnl": 788800
+    },
+    {
+      "ticker": "KXSOL15M-26SEP201000-00",
+      "ts": 1789912811,
+      "count": 100,
+      "cost": 724500,
+      "revenue": 1000000,
+      "pnl": 275500
+    },
+    {
+      "ticker": "KXETH15M-26SEP201030-30",
+      "ts": 1789914610,
+      "count": 100,
+      "cost": 211200,
+      "revenue": 1000000,
+      "pnl": 788800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP201215-15",
+      "ts": 1789920911,
+      "count": 100,
+      "cost": 666000,
+      "revenue": 1000000,
+      "pnl": 334000
+    },
+    {
+      "ticker": "KXETH15M-26SEP201430-30",
+      "ts": 1789996997,
+      "count": 100,
+      "cost": 547500,
+      "revenue": 1000000,
+      "pnl": 452500
+    },
+    {
+      "ticker": "KXDOGE15M-26SEP201315-15",
+      "ts": 1789997003,
+      "count": 100,
+      "cost": 211200,
+      "revenue": 1000000,
+      "pnl": 788800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP201230-30",
+      "ts": 1789997005,
+      "count": 100,
+      "cost": 232100,
+      "revenue": 1000000,
+      "pnl": 767900
+    },
+    {
+      "ticker": "KXBTC15M-26SEP210930-30",
+      "ts": 1789997410,
+      "count": 100,
+      "cost": 567400,
+      "revenue": 1000000,
+      "pnl": 432600
+    },
+    {
+      "ticker": "KXDOGE15M-26SEP211045-45",
+      "ts": 1790001911,
+      "count": 100,
+      "cost": 211200,
+      "revenue": 0,
+      "pnl": -211200
+    },
+    {
+      "ticker": "KXETH15M-26SEP211515-15",
+      "ts": 1790018113,
+      "count": 100,
+      "cost": 487500,
+      "revenue": 1000000,
+      "pnl": 512500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP211600-00",
+      "ts": 1790020811,
+      "count": 100,
+      "cost": 517500,
+      "revenue": 1000000,
+      "pnl": 482500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP211815-15",
+      "ts": 1790028910,
+      "count": 100,
+      "cost": 567400,
+      "revenue": 0,
+      "pnl": -567400
+    },
+    {
+      "ticker": "KXBTC15M-26SEP211845-45",
+      "ts": 1790030710,
+      "count": 100,
+      "cost": 116900,
+      "revenue": 1000000,
+      "pnl": 883100
+    },
+    {
+      "ticker": "KXBTC15M-26SEP212045-45",
+      "ts": 1790037911,
+      "count": 100,
+      "cost": 560000,
+      "revenue": 1000000,
+      "pnl": 440000
+    },
+    {
+      "ticker": "KXBTC15M-26SEP212145-45",
+      "ts": 1790041511,
+      "count": 100,
+      "cost": 620000,
+      "revenue": 1000000,
+      "pnl": 380000
+    },
+    {
+      "ticker": "KXBTC15M-26SEP212200-00",
+      "ts": 1790042411,
+      "count": 100,
+      "cost": 116900,
+      "revenue": 1000000,
+      "pnl": 883100
+    },
+    {
+      "ticker": "KXSOL15M-26SEP212245-45",
+      "ts": 1790045111,
+      "count": 100,
+      "cost": 21400,
+      "revenue": 1000000,
+      "pnl": 978600
+    },
+    {
+      "ticker": "KXBTC15M-26SEP220045-45",
+      "ts": 1790052311,
+      "count": 100,
+      "cost": 74600,
+      "revenue": 1000000,
+      "pnl": 925400
+    },
+    {
+      "ticker": "KXETH15M-26SEP220315-15",
+      "ts": 1790061311,
+      "count": 100,
+      "cost": 437100,
+      "revenue": 1000000,
+      "pnl": 562900
+    },
+    {
+      "ticker": "KXETH15M-26SEP220600-00",
+      "ts": 1790071211,
+      "count": 100,
+      "cost": 477400,
+      "revenue": 1000000,
+      "pnl": 522600
+    },
+    {
+      "ticker": "KXBTC15M-26SEP220815-15",
+      "ts": 1790079310,
+      "count": 100,
+      "cost": 517500,
+      "revenue": 0,
+      "pnl": -517500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP220900-00",
+      "ts": 1790082012,
+      "count": 100,
+      "cost": 427000,
+      "revenue": 0,
+      "pnl": -427000
+    },
+    {
+      "ticker": "KXBTC15M-26SEP221015-15",
+      "ts": 1790086510,
+      "count": 100,
+      "cost": 507500,
+      "revenue": 1000000,
+      "pnl": 492500
+    },
+    {
+      "ticker": "KXBTC15M-26SEP221100-00",
+      "ts": 1790089213,
+      "count": 100,
+      "cost": 211200,
+      "revenue": 1000000,
+      "pnl": 788800
+    },
+    {
+      "ticker": "KXDOGE15M-26SEP221200-00",
+      "ts": 1790092818,
+      "count": 100,
+      "cost": 607000,
+      "revenue": 1000000,
+      "pnl": 393000
+    },
+    {
+      "ticker": "KXDOGE15M-26SEP221315-15",
+      "ts": 1790097311,
+      "count": 100,
+      "cost": 106300,
+      "revenue": 1000000,
+      "pnl": 893700
+    },
+    {
+      "ticker": "KXSOL15M-26SEP221345-45",
+      "ts": 1790099110,
+      "count": 100,
+      "cost": 304500,
+      "revenue": 1000000,
+      "pnl": 695500
+    },
+    {
+      "ticker": "KXDOGE15M-26SEP221600-00",
+      "ts": 1790107212,
+      "count": 100,
+      "cost": 211200,
+      "revenue": 1000000,
+      "pnl": 788800
+    },
+    {
+      "ticker": "KXBTC15M-26SEP221715-15",
+      "ts": 1790111711,
+      "count": 100,
+      "cost": 517500,
+      "revenue": 1000000,
+      "pnl": 482500
+    },
+    {
+      "ticker": "KXETH15M-26SEP222000-00",
+      "ts": 1790121611,
+      "count": 100,
+      "cost": 517500,
+      "revenue": 1000000,
+      "pnl": 482500
+    }
+  ]
+}
